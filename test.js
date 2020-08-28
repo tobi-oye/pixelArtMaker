@@ -4,7 +4,7 @@ let height = document.querySelector('#inputHeight');
 let heightVal = Number(height.value);
 let width = document.querySelector('#inputWidth');
 let widthVal = Number(width.value);
-
+// function to create tables based on value inside the text field
 function makeGrid() {
     for (let i = 0; i < heightVal; i++){
         let row = document.createElement('tr');
@@ -18,4 +18,7 @@ function makeGrid() {
     }
 }
 
-button.addEventListener('click',makeGrid,false);
+// button.addEventListener('click',makeGrid);
+
+// click event listener for submit button that will call the makegrid function  above
+submit.addEventListener('click',makeGrid);
